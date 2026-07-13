@@ -51,13 +51,13 @@ function CreateEditShop() {
     return (
         <div className='flex justify-center flex-col items-center p-6 bg-gradient-to-br from-orange-50 relative to-white min-h-screen'>
             <div className='absolute top-[20px] left-[20px] z-[10] mb-[10px]' onClick={() => navigate("/")}>
-                <IoIosArrowRoundBack size={35} className='text-[#ff4d2d]' />
+                <IoIosArrowRoundBack size={35} className='text-[#ff9900]' />
             </div>
 
             <div className='max-w-lg w-full bg-white shadow-xl rounded-2xl p-8 border border-orange-100'>
                 <div className='flex flex-col items-center mb-6'>
                     <div className='bg-orange-100 p-4 rounded-full mb-4'>
-                        <FaUtensils className='text-[#ff4d2d] w-16 h-16' />
+                        <FaUtensils className='text-[#ff9900] w-16 h-16' />
                     </div>
                     <div className="text-3xl font-extrabold text-gray-900">
                         {myShopData ? "Edit Shop" : "Add Shop"}
@@ -96,7 +96,7 @@ function CreateEditShop() {
                         <input type="text" placeholder='Enter Shop Address' className='w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500' onChange={(e)=>setAddress(e.target.value)}
                         value={address}/> 
                     </div>
-                    <button className='w-full bg-[#ff4d2d] text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-orange-600 hover:shadow-lg transition-all duration-200 cursor-pointer' disabled={loading}>
+                    <button className='w-full bg-[#ff9900] text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#ff9100] hover:shadow-lg transition-all duration-200 cursor-pointer' disabled={loading}>
                         {loading?<ClipLoader size={20} color='white'/>:"Save"}
                     
                     </button>
